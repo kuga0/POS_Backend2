@@ -17,11 +17,7 @@ app = FastAPI()
 # CORS設定
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://tech0-gen-7-step4-studentwebapp-pos-3-d2eaeffahmgqd9fr.eastus-01.azurewebsites.net"
-        "https://tech0-gen-7-step4-studentwebapp-pos-3-d2eaeffahmgqd9fr.eastus-01.azurewebsites.net/pos-app"
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
