@@ -1,0 +1,6 @@
+fastapi==0.100.0
+uvicorn==0.23.1
+sqlalchemy==2.0.21
+pydantic==1.10.9
+databases==0.6.0  # 非同期のDB操作が必要な場合に使用。同期のみならば不要
+python-multipart==0.0.6  # 必要に応じて、フォームデータを処理するために使用
